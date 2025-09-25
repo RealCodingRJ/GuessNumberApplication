@@ -12,9 +12,8 @@ class Number {
 
 
 let guessUser = Number().getNumber();
-
-
 let guessLength = String(readLine()!)
+
 
 outer: if (guessLength.count <= 1)
 {
@@ -23,21 +22,19 @@ outer: if (guessLength.count <= 1)
     break outer;
 }
 
-else
-{
+elseBreak: if
     
+    print("Enter Number to Guess: ")
     let guess = Int(readLine()!);
     
-    
-    
+
     if guess == guessUser {
         
         print("Correct");
-    }
-    
-    
-    else {
+    } else {
         print("Number:", guessUser)
     }
+
+    break elseBreak;
     
 }
