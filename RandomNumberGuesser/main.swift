@@ -17,28 +17,26 @@ print("Enter Count of times to Guess Number: ")
 let guessLength = String(readLine()!)
 
 for num in guessLength {
-
-    outer: if (guessLength.count <= 1)
+    
+    if (guessLength.count <= 1)
     {
         
         print("Empty..")
         break outer;
     }
     
-    elseBreak: if
+    else if (guessLength.counter >= 2) {
         
         print("Enter Number to Guess: ")
-    let guess = Int(readLine()!);
-        
-    if guess == guessUser {
+        let guess = Int(readLine()!);
+    }
+    
+    else if guess == guessUser {
         
         print("Correct");
-        
-    } else {
+    }
+    
+    else {
         print("Number:", guessUser)
     }
-        break elseBreak;
-    }
-
-
 }
