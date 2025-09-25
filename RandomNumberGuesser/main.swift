@@ -10,15 +10,34 @@ class Number {
     }
 }
 
+
 let guessUser = Number().getNumber();
 
 
-let guess = Int(readLine()!);
+let guessLength = String(readLine()!)
 
-if guess == guessUser {
+outer: if (guessLength.count <= 1)
+{
     
-    print("Correct");
+    print("Empty..")
+    break outer;
 }
-else {
-    print("Number:", guessUser)
+
+else
+{
+    
+    let guess = Int(readLine()!);
+    
+    
+    
+    if guess == guessUser {
+        
+        print("Correct");
+    }
+    
+    
+    else {
+        print("Number:", guessUser)
+    }
+    
 }
